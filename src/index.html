@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Domain Name Generator</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -13,17 +13,49 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <main role="main">
+      <section class="">
+        <div class="container bg-light p-2">
+          <h1 class="jumbotron-heading">Generador de Nombres de Dominios</h1>
+          <p class="lead text-muted">
+            Crea un script que genere todas las combinaciones posibles de
+            nombres de dominio de una lista de pronombres, adjetivos y
+            sustantivos.
+          </p>
+        </div>
+      </section>
+
+      <div class="container album py-5 bg-light">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-4 shadow-sm">
+              <img
+                class="card-img-top"
+                src="/src/assets/img/generador-ideas.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div
+              class="card mb-4 shadow-sm d-flex justify-content-between align-items-center"
+            >
+              <button
+                type="button"
+                id="change"
+                class="btn btn-sm btn-outline-secondary p-1 m-4"
+              >
+                Generar Nombre de <br />Dominio Random
+              </button>
+              <br />
+              <p id="domain" class=""></p>
+              <!-- <p id="color" class="color-text"></p> -->
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </main>
+    <div class="fixed-bottom p-4">Hecho con ❤️ por Sandra Madarnas</div>
   </body>
 </html>
